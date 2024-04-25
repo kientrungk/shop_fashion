@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <LINk rel="stylesheet" href="style.css"></LINk>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="uploads/1.png" alt="">
+    </div>
+
+    <div class="menu">
+        <li><a href="menu.html">HOME</a></li>
+        <li><a href="cartegory.html">SHOP</a></li>
+        <li><a href="">PAGES</a>
+            <ul class="sub-menu">
+                <li><a href="about.html">About Brand</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+
+
+        </li>
+
+        <li><a href="contacts.html">CONTACTS</a></li>
+    </div>
+
+    <div class="other">
+
+        <li><input placeholder="Search" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
+        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+    </div>
+</header>
+
+
+<!-- SHOPPING CART -->
+<section class="breadcrumb-option">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb__text">
+                    <h4>Shopping Cart</h4>
+                    <div class="breadcrumb__links">
+                        <a href="./index.html">Home ></i></a>
+                        <a href="./shop.html">Pages></i></a>
+                        <span>Shopping Cart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cart">
+    <div class="container">
+        <div class="cart-top-wrap">
+            <div class="cart-top">
+                <div class="cart-top-cart cart-top-item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+
+
+                <div class="cart-top-cart  cart-top-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+
+                <div class="cart-top-cart  cart-top-item">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="cart-content row">
+            <div class="cart-content-left">
+                <table>
+                    <tr>
+                        <TH> Product</TH>
+                        <TH>Product's name</TH>
+                        <TH> Color</TH>
+                        <TH>Size</TH>
+                        <TH> SL</TH>
+                        <TH> Into money</TH>
+                        <th>Delete</th>
+                    </tr>
+                    <tr class="product1">
+                        <td><a href="produc.html"><img src="uploads/lv3.jpeg" alt=""></a></td>
+                        <td>T-SHIRT LV MSP:57E5969</td>
+                        <td><img src="uploads/trang.png" alt=""></td>
+                        <td><p>L</p></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td><p>$654.000</p></td>
+                        <td><span onclick="remove(1)"> X</span></td>
+                    </tr>
+
+                    <tr class="product2">
+                       <td><a href="produc6.html"><img src="uploads/lv5.jpeg" alt=""></a></td>
+                        <td>Nigo Denim Jacket MSP:77E9999</td>
+                        <td><img src="uploads/xanh.jpg" alt=""></td>
+                        <td><p>XL</p></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td><p>$122.555</p></td>
+                        <td><span onclick="remove(2)"> X</span></td>
+                    </tr>
+
+                    <tr class="product3">
+                        <td><a href="produc5.html"><img src="uploads/lv4.jpeg" alt=""></a></td>
+                        <td>SHIRT LV MSP:87E9989</td>
+                        <td><img src="uploads/black.jfif" alt=""></td>
+                        <td><p>XL</p></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td><p>$123.456</p></td>
+                        <td><span onclick="remove(3)"> X</span></td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="cart-content-right">
+                <table>
+                    <tr>
+                        <th colspan="2">TOTAL CART AMOUNT</th>
+                    </tr>
+                    <tr>
+                        <td>Gross Product</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Gross Product</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td> TOTAL AMOUNT</td>
+                        <td>$5.000</td>
+                    </tr>
+                    <tr>
+                        <td>PROVISIONAL</td>
+                        <td><p style="color:white ; font-weight:bold">$5000</p></td>
+                    </tr>
+                </table>
+                <div class="cart-content-right-text">
+                    <p>You will get free shipping when your order has a total value above $5.000</p>
+                    <p style="color:red ;font-weight:bold">Buy more <span style="font-size:18px;">20$</span> to get free Ship</p>
+
+                </div>
+
+                <div class="cart-content-right-button">
+                    <button>CONTINUE SHOPPING</button>
+                    <button>PAY</button>
+                </div>
+                <div class="cart-content-right-login ">
+                    <p>ACCOUNT</p>
+                    <P>Let's <a href="" style="color: blue;">Log in</a>To accumulate member points</P>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function remove(id){
+        $(`.product${id}`).css('display','none')
+    }
+</script>
+</body>
+</html>
